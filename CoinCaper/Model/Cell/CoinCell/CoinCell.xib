@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="coinCell" rowHeight="85" id="KGk-i7-Jjw" customClass="CoinCell" customModule="CoinCaper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cif-M3-aZZ">
+                        <rect key="frame" x="7" y="7" width="306" height="71"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.diamond.ar" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yAi-u2-1Kd">
+                                <rect key="frame" x="20" y="19.5" width="40" height="32.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="jqa-Tj-WiA"/>
+                                    <constraint firstAttribute="width" constant="40" id="rJo-HM-jPj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoinName" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zYv-PD-ddl">
+                                <rect key="frame" x="75" y="16" width="70" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="IFz-4N-NSH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="sD1-d1-9Q8">
+                                <rect key="frame" x="244" y="25" width="42" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="100" id="1MD-pe-wFg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24Diff" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgs-fd-5XZ">
+                                <rect key="frame" x="186" y="50" width="100" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="UhA-ie-Pcb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" systemColor="systemGreenColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHRT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zM-QB-swa">
+                                <rect key="frame" x="75" y="36" width="27.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="jLT-oj-bU6"/>
+                                    <constraint firstAttribute="height" constant="15" id="na0-Jl-psd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sD1-d1-9Q8" secondAttribute="trailing" constant="20" id="1Pe-bE-aKF"/>
+                            <constraint firstItem="hgs-fd-5XZ" firstAttribute="top" secondItem="sD1-d1-9Q8" secondAttribute="bottom" constant="7" id="CYC-5t-6XG"/>
+                            <constraint firstAttribute="trailing" secondItem="hgs-fd-5XZ" secondAttribute="trailing" constant="20" id="EMs-PO-Plk"/>
+                            <constraint firstItem="yAi-u2-1Kd" firstAttribute="leading" secondItem="cif-M3-aZZ" secondAttribute="leading" constant="20" id="EQg-J2-zA6"/>
+                            <constraint firstItem="1zM-QB-swa" firstAttribute="top" secondItem="zYv-PD-ddl" secondAttribute="bottom" constant="3" id="KuV-hG-Wql"/>
+                            <constraint firstItem="yAi-u2-1Kd" firstAttribute="top" secondItem="cif-M3-aZZ" secondAttribute="top" constant="20" id="O3C-Jt-Fc3"/>
+                            <constraint firstItem="1zM-QB-swa" firstAttribute="leading" secondItem="yAi-u2-1Kd" secondAttribute="trailing" constant="15" id="XWW-l4-fUb"/>
+                            <constraint firstAttribute="bottom" secondItem="1zM-QB-swa" secondAttribute="bottom" constant="20" id="fUQ-sE-BT2"/>
+                            <constraint firstItem="yAi-u2-1Kd" firstAttribute="centerY" secondItem="cif-M3-aZZ" secondAttribute="centerY" id="jbH-kE-ShC"/>
+                            <constraint firstItem="zYv-PD-ddl" firstAttribute="leading" secondItem="yAi-u2-1Kd" secondAttribute="trailing" constant="15" id="kcG-yd-A2Q"/>
+                            <constraint firstAttribute="bottom" secondItem="yAi-u2-1Kd" secondAttribute="bottom" constant="20" id="qdk-c0-Sve"/>
+                            <constraint firstItem="sD1-d1-9Q8" firstAttribute="top" secondItem="cif-M3-aZZ" secondAttribute="top" constant="25" id="wBJ-BM-VFw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="cif-M3-aZZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="7c7-LA-17h"/>
+                    <constraint firstItem="cif-M3-aZZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="POa-fc-Tzb"/>
+                    <constraint firstAttribute="bottom" secondItem="cif-M3-aZZ" secondAttribute="bottom" constant="7" id="Wz4-Ng-62w"/>
+                    <constraint firstAttribute="trailing" secondItem="cif-M3-aZZ" secondAttribute="trailing" constant="7" id="rhW-aB-BN3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="coinCardView" destination="cif-M3-aZZ" id="bCL-B8-h46"/>
+                <outlet property="coinDailyDiff" destination="hgs-fd-5XZ" id="8Vc-dh-6oM"/>
+                <outlet property="coinIcon" destination="yAi-u2-1Kd" id="AxH-kk-aTG"/>
+                <outlet property="coinName" destination="zYv-PD-ddl" id="tVl-le-xLz"/>
+                <outlet property="coinPrice" destination="sD1-d1-9Q8" id="NNc-HK-uSx"/>
+                <outlet property="coinShortName" destination="1zM-QB-swa" id="OZm-aW-02U"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.47767857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="questionmark.diamond.ar" catalog="system" width="128" height="122"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
